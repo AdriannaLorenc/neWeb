@@ -1,0 +1,143 @@
+
+/* HEADER */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    background-color:white;
+}
+
+#menu{
+    display: flex;
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+.logo{
+    color: black;
+    display: inline-block;
+    font-size: 16px;
+    max-width: 50%;
+}
+
+.nav a{
+    text-decoration: none; 
+    color: black;
+    font-size: 16px;
+}
+
+.nav ul li{
+    display: inline;
+    text-decoration: none;
+    margin-right: 5px;
+    overflow: hidden;
+}
+
+/* SLIDER */
+
+.carousel-inner{
+    height: 800px;
+}
+
+.item {
+    max-height: 1000px;
+    overflow: hidden;
+} 
+
+
+/* SECTION 2 */
+/* ABOUT */
+
+#boxAboutUs{
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+#boxAboutUs:nth-of-type(1){
+    background: #cacaca;
+}
+
+.title{
+    margin-top: 10px;
+    border-bottom: 2px solid yellow;
+    font-size: 16px;
+}
+
+#about{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text{
+    max-width: 50%;
+}
+
+.empty{
+    width: 50%;
+}
+
+.image img{
+    width: 80%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.image:hover img{
+    -moz-transform: scale(1.45);
+    -webkit-transform: scale(1.45);
+    transform: scale(1.45);
+}
+
+/* SECTION 3 STRENGTHS */
+
+#asset{
+    margin-top: 40px;
+    display: flex;
+}
+
+.slogan{
+    margin: auto;
+    border-bottom: 2px solid yellow;
+}
+.strengths{
+    margin-top: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.strengths i{
+    padding: 15px;
+    border-radius: 100%;
+    background: yellow;
+    transform:scale(1.5);
+    margin-bottom: 10px;
+}
+
+.circle{
+    text-align: center;
+    margin-right: 70px;
+}
+
+
+/* FOOTER */
+
+#footer{
+    background: #cacaca;
+    height: 40px;
+}
+
+.copyright{
+    padding-top: 10px;
+    margin: auto;
+
+}
+

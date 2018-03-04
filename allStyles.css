@@ -21,6 +21,18 @@ header {
     text-align: center;
 }
 
+    @media (min-width: 768px) {
+        .navbar-ab {
+          margin-bottom: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .nav-lang{
+          text-align: right;
+        }
+      }
+
 .navbar-toggle .icon-bar {
     background-color: black;
 }
@@ -174,7 +186,7 @@ header {
     font-size: 25px;
     font-weight: 900;
     margin-bottom: 1em;
-    border-bottom: 2px solid yellow;
+    border-bottom: 2px solid red;
     padding-bottom: 10px;
 }
 
@@ -214,7 +226,7 @@ header {
 /* FOOTER */
 
 #footer {
-    background-color: #cacaca;
+    background-color: white;
     padding: 20px 0;
 }
 
@@ -258,6 +270,7 @@ header {
 
 .copyright {
     padding-top: 10px;
+    font-size: 12px;
     margin: auto;
 }
 

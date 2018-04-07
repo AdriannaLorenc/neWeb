@@ -4,8 +4,22 @@ body {
 
 header {
     width: 100%;
-    /* background-color: #cacaca; */
 }
+
+
+.title {
+    display: inline-block;
+    margin-top: 1em;
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+    margin-bottom: 1em;
+    border-bottom: 2px solid red;
+    padding-bottom: 10px;
+}
+
+/* ********************************************* */
+/* INDEX ~ HOME */
 
 .navbar-ab {
     margin-bottom: 0;
@@ -13,8 +27,13 @@ header {
 
 .navbar-brand {
     font-size: 16px;
-    color: black;
+    color: yellow;
     text-decoration: none;
+}
+
+.navbar-nav>li>a {
+    font-weight: 900;
+    font-size: 22px;
 }
 
 #navbar-collapse-ab{
@@ -77,25 +96,13 @@ header {
 }
 
 
-/* SECTION 2 */
+/* HOME_SECTION 2 */
 
 #boxHome {
     padding-top: 40px;
+    color: black;
     padding-bottom: 60px;
     font-size: 22px;
-}
-
-#boxAboutUs:nth-of-type(1) {
-    background: #cacaca;
-}
-
-.title {
-    display: inline-block;
-    margin-top: 1em;
-    font-size: 25px;
-    margin-bottom: 1em;
-    border-bottom: 2px solid yellow;
-    padding-bottom: 10px;
 }
 
 #home {
@@ -112,95 +119,60 @@ header {
     text-align: center;
 }
 
-/* SECTION WOOD */
-#wood{
-    height: 150px;
-    width: 100%;
-    background-image: url("timber.jpg");
+.link{
+    color: red;
 }
 
-/* SECTION 3 STRENGTHS */
-
-#asset {
-    margin-top: 40px;
-    display: flex;
-}
-
-.slogan {
-    display: inline;
-    margin: auto;
-    margin-top: 1em;
-    font-size: 1.5em;
-    margin-bottom: 1em;
-    border-bottom: 2px solid yellow;
-}
-
-.strengths {
-    margin-top: 5em;
-    text-align: center;
-}
-
-.strengths i {
-    padding: 15px;
-    border-radius: 100%;
-    background: yellow;
-    transform: scale(1.5);
-    margin-bottom: 10px;
-}
-
-.circle {
-    text-align: center;
-    margin: 50px 0;
-}
-
-.circle-title {
-    font-weight: 900;
-    margin: 15px 0;
-}
-
-/* SECTION ROOF */
-#roof{
-    height: 150px;
-    width: 100%;
-    background-image: url("timber.jpg");
-}
-
-
-/* SECTION 4 */
-
-/* ABOUT */
+/* ********************************************** */
+/* INDEX ~ ABOUT */
 
 #boxAboutUs {
-    padding-top: 40px;
+    position: relative;
+    color: black;
     padding-bottom: 60px;
     font-size: 22px;
 }
 
-#boxAboutUs:nth-of-type(1) {
-    background: #cacaca;
-}
-
-.title {
-    display: inline-block;
-    margin-top: 1em;
-    font-size: 25px;
-    font-weight: 900;
-    margin-bottom: 1em;
-    border-bottom: 2px solid red;
-    padding-bottom: 10px;
+#boxAboutUs:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./pic/background1.jpg'); 
+   background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 40px;  
+    width: 100%;
+    height: 100%;
+    opacity : 0.6;
+    z-index: -1;
 }
 
 #about {
     margin-top: 1em;
     margin-bottom: 2em;
-    align-items: center;
+    display: flex;
+}
+
+@media (m-width: 750px) {
+    #about {
+        flex-direction: column;
+    }
 }
 
 .text {
     font-size: 1em;
+    width: 100%;
 }
 
 .image {
+    align-items: center;
     padding: 2em;
 }
 
@@ -218,221 +190,142 @@ header {
     }
 }
 
+/* ************************************************ */
+/* INDEX_REMONTY */
 
-
-
-
-
-/* FOOTER */
-
-#footer {
-    background-color: white;
-    padding: 20px 0;
-}
-
-.copyright {
-    text-align: center;
-}
-
-
-
-
-/* CONTACT */
-
-
-/* SECTION CONTATC */
-
-#contactSite {
-        background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('brick.jpg');
-        height: 1200px;
-}
-
-#contact {
+.renovation {
+    color: black;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
-
-.textC {
-    font-size: 20px;
-    color: white;
-}
-
-.googleMap h3{
-    text-align: center;
-    color: white;
-}
-
-
-
-/* FOOTER */
-
-.copyright {
-    padding-top: 10px;
-    font-size: 12px;
-    margin: auto;
-}
-
-
-/* OFFER */
-
-
-/* SECTION */
-
-#background {
-    background-image: url("wood.jpg");
-    height: 800px;
-    align-content: center;
-}
-
-.box {
-    margin-top: 80px;
-}
-
-.pic {
-    margin-bottom: 30px;
-}
-
-.pic img {
-    height: 250px;
-}
-
-.pic img:hover {
-    position: relative;
-    opacity: 0.5;
-    visibility: visible;
-}
-
-
-/* FOOTER */
-
-.copyright {
-    padding-top: 10px;
-    margin: auto;
-}
-
-
-/* REMONTY */
-/* SECTION */
-
-#renovation{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('timber.jpg');
-}
-
-.titlee {
-    color: white;
-    display: inline-block;
-    margin-top: 1em;
-    font-size: 25px;
-    font-weight: 900;
-    margin-bottom: 1em;
-    border-bottom: 2px solid yellow;
-    padding-bottom: 10px;
-}
-
-.bigBox{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.mainText{
-    color: white;
-    text-align: center;
-    font-size: 1em;
-}
-
-.main img{
-height: 400px;
-width: 400px;
- padding: 2em;
-}
-
-.dcr h3{
-    font-size: 30px;
-}
-
-#slogan p{
-    background: white;
-    color: rgb(66, 38, 2);
-    font-weight: 900;
-    padding: 10px;
-    text-align: center;
-}
-
-.lastOne{
-    margin-bottom: 20px;
-}
-
-
-
-/* DOMKI */
-.bigBoxHouse {
-    margin-top: 3em;
-    margin-bottom: 5em;
-}
-
-.bigBoxHouse img{
-    padding: inherit;
-}
-
-.bigBoxHouse p{
-    color: white;
-    text-align: center;
-}
-
-.bigBoxHousee {
-    margin-bottom: 3em;
-}
-
-.bigBoxHousee p{
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-
-.mainH {
-  display: flex; 
-}
-
-.mainHo {
-    display: flex; 
     justify-content: center;
+    padding-bottom: 60px;
+    font-size: 18px;
+}
+
+#motto{
+    margin-top: 2em;
+    font-size: 20px;
+}
+
+.motto {
+    margin-top: 2em;
+    background: rgba(244, 248, 9, 0.5);
+    padding: 20px;
+    text-align: center;
+}
+
+.renoBox{
+    background: white;
+}
+
+.wrapper{
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+.info{
+    padding: 0 10px 10px 10px;
+}
+
+#info{
+    width: 100%;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: inline-block;
+    padding: 0 0 10px 10px;
+    font-size: 18px;
+}
+
+#info span{
+    border-bottom: 5px solid rgba(244, 248, 9, 0.5);
+}
+
+.inline{
+    display: inline;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* ************************************************** */
+/* DOMKI */
+
+.slogan{
+    text-align: center;
+}
+
+.slogan ol{
+    margin-top: 2em;
+    text-align: start;
+    font-size: 18px;
+}
+
+.slogan li{
+    margin-top: 1em;
+}
+
+.slogan li:nth-of-type(5){
+    list-style-type: none;    
+}
+
+.slogan p{
+    margin-top: 1em;
+    font-size: 18px;
+}
+.yellow{
+    border-bottom: 5px solid rgba(244, 248, 9, 0.5);
+}
+
+.hook{
+    color: red;
+}
+
+#gallery {
+    width: 800px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: 100px auto;
+    border: 2px solid #003C72;
+  }
+  
+  #navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+  }
+  
+  #navigation li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    clear: both;
+  }
+  
+  #navigation li a img {
+    display: block;
+    margin: 10px 10px 0px 0px;
+    border: none;
+  }
+  
+  #navigation li a {
+    display: block;
+  }
+  
+  #full-picture {
+    width: 700px;
+    height: 375px;
+    overflow: hidden;
+    float: left;
   }
 
-.mainH img{
-    margin: auto;
-    justify-content: center;
-}
-
-.mainTextH{
-    color: white;
-    text-align: center;
-    font-size: 1em;
-    margin-top: 3em;
-    margin-bottom: 3em;
-}
-
-#slogann p{
-    background: white;
-    color: rgb(66, 38, 2);
-    font-weight: 900;
-    padding: 10px;
-    text-align: center;
-}
-
-.h{
-    margin-top: 3em;
-    color: rgb(66, 38, 2);
-   text-align: center;
-   padding-bottom: 3em;
-}
-
 /* lastone */
+
 #last{
-    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('timber.jpg');
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url('wall.jpg');
     padding-top: 3em;
 }
 
@@ -452,5 +345,76 @@ width: 400px;
     color: white;
     font-weight: 900;
     font-size: 2em;
+    text-align: center;
+}
+
+/* ********************************************* */
+/* INDEX_CONTATC */
+
+#contactSite {
+    position: relative;
+    color: black;
+    padding-bottom: 60px;
+    font-size: 22px;
+    min-height: 1000px;
+}
+
+#contactSite:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('./pic/background2.jpg'); 
+   background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 40px;  
+    width: 100%;
+    height: 100%;
+    opacity : 0.6;
+    z-index: -1;
+}
+
+#contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#contact p{
+    margin-top: 2em;
+    
+}
+
+.googleMap h3{
+    margin-top: 4em;
+    text-align: center;
+    color: black;
+    width: 100%;
+}
+
+/* *********************************************** */
+/* MATERIALS */
+
+#materials{
+    height: 1100px;
+}
+
+/* ********************************************* */
+/* FOOTER */
+
+.footer {
+    background-color: white;
+}
+
+.copyright {
+    margin-top: 3em;
+    padding-top: 10px;
+    border-top: 2px solid red;
     text-align: center;
 }

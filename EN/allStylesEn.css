@@ -157,7 +157,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('./pic/background1.jpg'); 
+    background-image: url('../pic/background1.jpg'); 
    background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;
@@ -240,7 +240,7 @@ header {
     margin-top: 2em;
     margin-bottom: 2em;
     justify-content: space-around;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 @media (max-width: 992px) {
@@ -255,10 +255,6 @@ header {
     text-align: center;
 }
 
-.img{
-    margin: auto;
-}
-
 #info{
     width: 100%;
     text-align: center;
@@ -266,7 +262,7 @@ header {
     margin-bottom: 2em;
     display: inline-block;
     padding: 0 0 10px 10px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #info span{
@@ -274,10 +270,11 @@ header {
     font-size: 22px;
 }
 
+
 .inline{
     display: inline;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 /* ************************************************** */
@@ -302,6 +299,7 @@ header {
 }
 
 .specialFont{
+    margin-top: 1em;
     font-size: 50px;
     font-family: 'Shrikhand', cursive;
 }
@@ -396,7 +394,7 @@ font-size: 26px;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: url('./pic/background2.jpg'); 
+    background-image: url('../pic/background2.jpg'); 
    background-repeat: no-repeat;
     background-position: 50% 0;
     -ms-background-size: cover;

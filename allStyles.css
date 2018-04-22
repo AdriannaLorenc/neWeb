@@ -339,6 +339,7 @@ header {
         height: 350px;
     }
 } 
+
   #navigation {
     list-style: none;
     padding: 0;
@@ -346,6 +347,11 @@ header {
     float: left;
   }
   
+  @media (max-width: 992px) {
+    #navigation {
+        display: flex;
+    }
+} 
   #navigation li {
     padding: 0;
     margin: 0;
@@ -388,11 +394,21 @@ header {
         flex-direction: column;
         justify-content: center;
     }
+}
+
+@media (max-width: 992px) {
     #full-picture2 img{
-        height: 350px;
-        /* overflow: hidden; */
+        
+        width: 400px;
     }
 }
+
+@media (max-width: 992px) {
+    #navigation2 {
+        display: flex;
+    }
+} 
+
   #navigation2 {
     list-style: none;
     padding: 0;

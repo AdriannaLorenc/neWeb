@@ -328,13 +328,21 @@ header {
     z-index: 1;
     margin: auto;
     margin-bottom: 10px;
-    /* border: 2px solid red; */
   }
   
+  @media (max-width: 992px) {
+    #gallery{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #full-picture img{
+        height: 350px;
+    }
+} 
   #navigation {
     list-style: none;
     padding: 0;
-    margin: 30 0 0 0;
+    /* margin: 30 0 0 0; */
     float: left;
   }
   
@@ -362,6 +370,59 @@ header {
     float: left;
   }
 
+
+  #gallery2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 992px) {
+    #gallery2{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #full-picture2 img{
+        height: 350px;
+        /* overflow: hidden; */
+    }
+}
+  #navigation2 {
+    list-style: none;
+    padding: 0;
+    float: left;
+  }
+  
+  #navigation2 li {
+    padding: 0;
+    margin: 0;
+    float: left;
+    clear: both;
+  }
+  
+  #navigation2 li a img {
+    display: block;
+    margin: 10px 10px 0px 0px;
+    border: none;
+  }
+  
+  #navigation2 li a {
+    display: block;
+  }
+  
+  #full-picture2 {
+    width: 700px;
+    height: 375px;
+    overflow: hidden;
+    float: left;
+  }
+  
 .ul li{
     list-style: circle;
 }

@@ -318,7 +318,7 @@ header {
     width: 100%;
 }
 
-#gallery {
+#gallery, #gallery2 {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -331,108 +331,50 @@ header {
   }
   
   @media (max-width: 992px) {
-    #gallery{
+    #gallery, #gallery2{
         flex-direction: column;
         justify-content: center;
     }
-    #full-picture img{
+    #full-picture img, #full-picture2 img{
         height: 350px;
     }
 } 
 
-  #navigation {
+  #navigation, #navigation2 {
     list-style: none;
     padding: 0;
     /* margin: 30 0 0 0; */
     float: left;
   }
-  
   @media (max-width: 992px) {
-    #navigation {
+    #navigation, #navigation2 {
         display: flex;
     }
 } 
-  #navigation li {
-    padding: 0;
-    margin: 0;
-    float: left;
-    clear: both;
-  }
-  
-  #navigation li a img {
-    display: block;
-    margin: 10px 10px 0px 0px;
-    border: none;
-  }
-  
-  #navigation li a {
-    display: block;
-  }
-  
-  #full-picture {
-    width: 700px;
-    height: 375px;
-    overflow: hidden;
-    float: left;
-  }
-
-
-  #gallery2 {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    margin: auto;
-    margin-bottom: 10px;
-  }
-  
-  @media (max-width: 992px) {
-    #gallery2{
-        flex-direction: column;
-        justify-content: center;
-    }
-}
 
 @media (max-width: 992px) {
-    #full-picture2 img{
-        
+    #full-picture2 img {
         width: 400px;
     }
-}
-
-@media (max-width: 992px) {
-    #navigation2 {
-        display: flex;
-    }
 } 
-
-  #navigation2 {
-    list-style: none;
-    padding: 0;
-    float: left;
-  }
-  
-  #navigation2 li {
+  #navigation li, navigation2 li {
     padding: 0;
     margin: 0;
     float: left;
     clear: both;
   }
   
-  #navigation2 li a img {
+  #navigation li a img, #navigation2 li a img {
     display: block;
     margin: 10px 10px 0px 0px;
     border: none;
   }
   
-  #navigation2 li a {
+  #navigation li a, #navigation2 li a {
     display: block;
   }
   
-  #full-picture2 {
+  #full-picture, #full-picture2 {
     width: 700px;
     height: 375px;
     overflow: hidden;
